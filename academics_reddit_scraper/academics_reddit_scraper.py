@@ -3,7 +3,7 @@ import praw
 import csv
 from typing import List, Dict, Tuple
 import argparse
-from sentiment_analysis import analyze_sentiment
+from .sentiment_analysis import analyze_sentiment
 from tqdm import tqdm
 
 def create_reddit_instance():
