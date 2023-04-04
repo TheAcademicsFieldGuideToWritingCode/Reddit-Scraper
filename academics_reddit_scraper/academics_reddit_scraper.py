@@ -137,5 +137,12 @@ def main():
     export_data(posts, comments)
     print("Done.")
 
+def scrape_reddit(subreddit, num_posts, num_comments):
+    reddit = create_reddit_instance()
+    posts, comments = gather_data(reddit, subreddit, num_posts, num_comments)
+    export_data(posts, comments)
+    print("Done.")
+
+
 if __name__ == "__main__":
     main()
